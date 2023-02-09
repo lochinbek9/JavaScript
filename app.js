@@ -11,13 +11,11 @@ const seriasDB = {
 	private: false,
 }
 
-const a = prompt("Oxirgi korgan serialingiz");
-const b = prompt("Necha baho bergan bolar edingiz");
-const c = prompt("Oxirgi korgan serialingiz");
-const d = prompt("Necha baho bergan bolar edingiz");
+for(let i = 0; i < 2; i++){
+	const a = prompt("Oxirgi korgan serialingiz");
+	const b = prompt("Necha baho bergan bolar edingiz");
+	
+	seriasDB.serias[a] = b;
+}
 
-seriasDB.serias[a] = b;
-
-seriasDB.serias[c] = d;
-
-console.log(seriasDB.serias);	
+console.log(seriasDB);	
